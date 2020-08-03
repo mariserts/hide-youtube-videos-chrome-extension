@@ -1,0 +1,20 @@
+{
+    "name": "Hide Youtube Videos",
+    "version": "1.0",
+    "description": "Hide youtube videos that you dont want to see in your suggestion sidebar",
+    "permissions": ["activeTab", "storage", "<all_urls>"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "Hide Youtube Videos Extension"
+    }
+}
