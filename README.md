@@ -11,4 +11,4 @@
 ## Features
 - adds HIDE link next to video meta data line (next to views, time ago)
 - onhide click video is marked as hidden and on next page load is removed from DOM
-- storage is local and synced across browsers
+- storage is local and synced across devices
